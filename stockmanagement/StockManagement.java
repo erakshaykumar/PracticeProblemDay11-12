@@ -22,7 +22,8 @@ public class StockManagement {
 		try (Scanner sc = new Scanner(System.in)) {
 			StockManagement obj = new StockManagement();
 			while (true) {
-				System.out.println("1-Enter new stock \n2-Display Stock Report \n3-Withdraw amount \n4-Exit");
+				System.out.println(
+						"1-Enter New Stock \n2-Display Stock Report \n3-Withdraw Amount From Balance \n4-Exit");
 				System.out.println("Enter your choice: ");
 				int choice = sc.nextInt();
 
@@ -69,7 +70,6 @@ public class StockManagement {
 			sum = sum + total;
 			System.out.println("Stock name= " + stockName.get(i) + "\nValue of each share= " + sharePrice.get(i)
 					+ "\nTotal value of share= " + total);
-
 			System.out.println(" Balance remaining : " + balance);
 
 		}
